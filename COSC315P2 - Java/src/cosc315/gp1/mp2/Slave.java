@@ -25,7 +25,7 @@ public class Slave implements Runnable {
 	@Override
 	public void run() {
 		while(true) {
-			System.out.println("Slave Thread " + _slaveID + " is waiting for task...");
+			System.out.printf("[S%d] Idle%n", _slaveID);
 			Task t = null;
 			while((t = _taskQ.poll()) == null) {
 				try {
@@ -34,11 +34,11 @@ public class Slave implements Runnable {
 					e.printStackTrace();
 				}
 			}
-			System.out.println("Slave Thread " + _slaveID + " retrievied task with ID = " + t.getID() + " and length = " + t.getLength());
+			System.out.printf("[S%d] Received Task %d (Length %d)%n", _slaveID, t.getID(), t.getLength());
 			try {
-				System.out.println("Slave Thread " + _slaveID + " is executing task " + t.getID());
+				System.out.printf("[S%d] Executing Task %d%n", _slaveID, t.getID());
 				Thread.sleep(t.getLength() * 1000);
-				System.out.println("Slave Thread " + _slaveID + " finished executing task " + t.getID());
+				System.out.printf("[S%d] Finished Task %d%n", _slaveID, t.getID());
 			} catch (Exception e) {
 				e.printStackTrace();
 			}

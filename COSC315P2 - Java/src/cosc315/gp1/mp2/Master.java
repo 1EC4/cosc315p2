@@ -37,10 +37,12 @@ public class Master implements Runnable {
 	public void run(){
 		while(true) {
 			// Randomly generates a number between 1 and _mIdle (inclusive)
+			// RNG follows the pattern: (int)(Math.random() * (MAX - MIN)) + MIN
+			// to generate a number between [MIN, MAX) (ie: including min, excluding max)
 			int sleep = (int)(Math.random() * (_mIdle - 1)) + 1;
 			// Master Thread sleeps for a random amount of time
 			try {
-				System.out.println("Master Thread is idling...");
+				System.out.printf("[MT] Idle%n");
 				Thread.sleep(sleep * 1000);
 			} catch (Exception e) {
 				e.printStackTrace();
@@ -48,10 +50,16 @@ public class Master implements Runnable {
 			
 			// Master Thread generates a new task
 			Task t = Task.GenerateTask(_mLen);
-			System.out.println("Master Thread received new task " + t.getID() + " with length " + t.getLength());
+			System.out.printf("[MT] Received Task %d with length %d%n", t.getID(), t.getLength());
 			// Master Thread waits for queue to be non-full
-			System.out.println("Master Thread is waiting for queue to be idle...");
+			boolean output = false;
 			while(_taskQ.size() == _nSlaves) {
+				// Only used for debugging output
+				if (!output) {
+					output = true;
+					System.out.printf("[MT] Waiting for Queue to be non-full%n");
+				}
+				
 				try {
 					Thread.sleep(WAIT_TIME);
 				} catch (Exception e) {
@@ -61,7 +69,7 @@ public class Master implements Runnable {
 			
 			// Master Thread adds new Task to the queue/
 			_taskQ.add(t);
-			System.out.println("Master Thread added task " + t.getID() + " to the task queue");
+			System.out.printf("[MT] Added Task %d to queue%n", t.getID());
 		}
 	}
 	
