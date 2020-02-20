@@ -23,8 +23,8 @@ _Explain the design of your program and how syncronization works._
 
 ## Design Choices
   1. Dispatch requests using a bounded buffer producer-consumer framework
-  2. Implemented in Java using monitors
-  3. Implemented in C using semaphores
+  2. Synchronization implemented in Java using monitors
+  3. Synchronization implemented in C using semaphores
   
 ## Build instructions
 **Java Implementation:**
