@@ -25,7 +25,9 @@ public class Slave implements Runnable {
 	@Override
 	public void run() {
 		while(true) {
-			System.out.printf("[S%d] Idle%n", _slaveID);
+			Main.log("S" + _slaveID, "Idle");
+			
+			// Waiting for a task to be in the queue
 			Task t = null;
 			while((t = _taskQ.poll()) == null) {
 				try {
@@ -34,11 +36,13 @@ public class Slave implements Runnable {
 					e.printStackTrace();
 				}
 			}
-			System.out.printf("[S%d] Received Task %d (Length %d)%n", _slaveID, t.getID(), t.getLength());
+
+			Main.log("S" + _slaveID, "Task "+t.getID()+" with length "+t.getLength()+" received");
+			// Executing task by sleeping
 			try {
-				System.out.printf("[S%d] Executing Task %d%n", _slaveID, t.getID());
+				Main.log("S" + _slaveID, "Executing Task " + t.getID());
 				Thread.sleep(t.getLength() * 1000);
-				System.out.printf("[S%d] Finished Task %d%n", _slaveID, t.getID());
+				Main.log("S" + _slaveID, "Finished Task " + t.getID());
 			} catch (Exception e) {
 				e.printStackTrace();
 			}

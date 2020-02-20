@@ -42,7 +42,7 @@ public class Master implements Runnable {
 			int sleep = (int)(Math.random() * (_mIdle - 1)) + 1;
 			// Master Thread sleeps for a random amount of time
 			try {
-				System.out.printf("[MT] Idle%n");
+				Main.log("MT", "Idle");
 				Thread.sleep(sleep * 1000);
 			} catch (Exception e) {
 				e.printStackTrace();
@@ -50,14 +50,14 @@ public class Master implements Runnable {
 			
 			// Master Thread generates a new task
 			Task t = Task.GenerateTask(_mLen);
-			System.out.printf("[MT] Received Task %d with length %d%n", t.getID(), t.getLength());
+			Main.log("MT", "Task " + t.getID() + " with length " + t.getLength() + " generated");
 			// Master Thread waits for queue to be non-full
 			boolean output = false;
 			while(_taskQ.size() == _nSlaves) {
 				// Only used for debugging output
 				if (!output) {
 					output = true;
-					System.out.printf("[MT] Waiting for Queue to be non-full%n");
+					Main.log("MT", "Waiting for Queue to be non-full");
 				}
 				
 				try {
@@ -69,7 +69,7 @@ public class Master implements Runnable {
 			
 			// Master Thread adds new Task to the queue/
 			_taskQ.add(t);
-			System.out.printf("[MT] Added Task %d to queue%n", t.getID());
+			Main.log("MT", "Added task " + t.getID() + " to queue");
 		}
 	}
 	
