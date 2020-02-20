@@ -1,23 +1,22 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "parameters.h"
+#include "datatypes.h"
 
-typedef struct Task {
-  
-  int id; // id number of the task
-  int length; // length of task in seconds
-
-} Task;
 
 //generates a task with a random length 
 Task genRandTask(int maxLen){
   int len = ( rand() % maxLen ) + 1;
-  //if ( nextId != null && nextId >= 0 ) {
   if ( nextId >= 0 ) {
     nextId++;
   }
-  else {
-    printf("Error taskId has been initialized");
+  //note these two error don't stop the problem but just flagged them so they can be fixed elsewhere if they occur
+  else if (nextId < 0) {
+    printf("Error negative task id");
+  }
+  else { // this is for if the value is null just set it to one because that means no tasks have been generated.
+    //however still flag with a print that taskId needs to be initialized in the main file
+    printf("Error taskId hasn't been initialized");
     nextId = 1; 
   }
 
@@ -26,6 +25,8 @@ Task genRandTask(int maxLen){
   
 }
 
+  //this is just the test code for this file, uncomment if you want to test functionality
+/*
 int main() {
   nextId = 0;
 
@@ -38,3 +39,5 @@ int main() {
   }
   return 0;
 }
+  
+*/
