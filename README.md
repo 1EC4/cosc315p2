@@ -31,35 +31,34 @@ _Explain the design of your program and how syncronization works._
 
 _Explain how to compile code on Linux in the form of makefiles_
 
-_Include a description of any_ `command line arguments your program expects or accepts`
+_Include a description of any `command line arguments` your program expects or accepts_
 
 
 **C Implementation:**
 
 _Explain how to compile code on Linux in the form of makefiles_
 
-_Include a description of any_ `command line arguments your program expects or accepts`
+_Include a description of any `command line arguments` your program expects or accepts_
 
 ## Sample Output
 Check out [this example file](sample_output.txt) for sample output.
 
 ## Contributors
-- **Anthony Boyko**
+**Anthony Boyko**
   - 
   - 
   - 
   - 
   - 
 
-- **Nick Rieske**
+**Nick Rieske**
   - 
   - 
   - 
   - 
   - 
 
-- **Jonathan Gresl**
-  - 
+**Jonathan Gresl**
   - 
   - 
   - 
@@ -68,7 +67,7 @@ Check out [this example file](sample_output.txt) for sample output.
 
 ## Programming Experience
 
-_Add a brief discussion describing your experience implementing this problem in Java and C/C++ _
+_Add a brief discussion describing your experience implementing this problem in Java and C_
 
 _Comment on the amount of effort and ease of coding the problem in different languages_
 
