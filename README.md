@@ -28,11 +28,15 @@ _Explain the design of your program and how syncronization works._
   
 ## Build instructions
 **Java Implementation:**
-_How to compile code on Linux in the form of makefiles_
+
+_Explain how to compile code on Linux in the form of makefiles_
+
 _Include a description of any_ `command line arguments your program expects or accepts`
 
 **C Implementation:**
-_How to compile code on Linux in the form of makefiles_
+
+_Explain how to compile code on Linux in the form of makefiles_
+
 _Include a description of any_ `command line arguments your program expects or accepts`
 
 ## Sample Output
@@ -62,8 +66,11 @@ Check out [this example file](sample_output.txt) for sample output.
   - 
 
 ## Programming Experience
+
 _Add a brief discussion describing your experience implementing this problem in Java and C/C++ _
+
 _Comment on the amount of effort and ease of coding the problem in different languages_
+
 _Add assessment(s) to ZIp file before submitting (Does everyone submit separately?)_
 
 [Back to The Top](#cosc-315-operating-systems---project-2)
