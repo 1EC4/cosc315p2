@@ -33,6 +33,7 @@ _Explain how to compile code on Linux in the form of makefiles_
 
 _Include a description of any_ `command line arguments your program expects or accepts`
 
+
 **C Implementation:**
 
 _Explain how to compile code on Linux in the form of makefiles_
@@ -49,14 +50,14 @@ Check out [this example file](sample_output.txt) for sample output.
   - 
   - 
   - 
-  - 
+
 - **Nick Rieske**
   - 
   - 
   - 
   - 
   - 
-  - 
+
 - **Jonathan Gresl**
   - 
   - 
