@@ -35,6 +35,7 @@ Clone the project to a local repository:   `git clone https://github.com/1EC4/co
 
 
 **C Implementation:**
+
 Change to C directory:   `cd cosc315p2/C Implementation`
 
 Build the program:   `make Program`
