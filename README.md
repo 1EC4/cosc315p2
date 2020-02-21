@@ -30,41 +30,43 @@ _Explain the design of your program and how syncronization works._
 
 Clone the project to a local repository:   `git clone https://github.com/1EC4/cosc315p2.git`
 
+**C Implementation:**
+
+Change to C directory: `cd cosc315p2/C Implementation`
+
+Build the program: `make Program`
+
+Run the program: `./Program`
+
 **Java Implementation:**
 
 
 
-**C Implementation:**
 
-Change to C directory:   `cd cosc315p2/C Implementation`
-
-Build the program:   `make Program`
-
-Run the program:   `./Program`
 
 ## Sample Output
 Check out [this example file](sample_output.txt) for sample output.
 
 ## Contributors
-**Anthony Boyko**
-  - 
-  - 
-  - 
-  - 
-  - 
-
-**Nick Rieske**
-  - 
+- **Anthony Boyko**
+  - Kickstarted the C implementation and setup the program framework
   - 
   - 
   - 
   - 
 
-**Jonathan Gresl**
+- **Nick Rieske**
+  - Java
   - 
   - 
   - 
   - 
+
+- **Jonathan Gresl**
+  - C
+  - README
+  - Sample output
+  - Master and slave threads
   - 
 
 ## Programming Experience
