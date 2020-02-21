@@ -42,7 +42,7 @@ public class Master implements Runnable {
 			int sleep = (int)(Math.random() * (_mIdle - 1)) + 1;
 			// Master Thread sleeps for a random amount of time
 			try {
-				Main.log("MT", "Idle");
+				Main.log("MT", "Going to sleep for " + sleep + " seconds");
 				Thread.sleep(sleep * 1000);
 			} catch (Exception e) {
 				e.printStackTrace();
