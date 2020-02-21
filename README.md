@@ -27,18 +27,19 @@ _Explain the design of your program and how syncronization works._
   3. Synchronization implemented in C using semaphores
   
 ## Build instructions
+
+First clone the project to a local repository:
+`git clone https://github.com/1EC4/cosc315p2.git`
+
 **Java Implementation:**
 
-_Explain how to compile code on Linux in the form of makefiles_
-
-_Include a description of any `command line arguments` your program expects or accepts_
 
 
 **C Implementation:**
 
-_Explain how to compile code on Linux in the form of makefiles_
-
-_Include a description of any `command line arguments` your program expects or accepts_
+`cd cosc315p2/C Implemtation`
+`make Program`
+`./Program`
 
 ## Sample Output
 Check out [this example file](sample_output.txt) for sample output.
