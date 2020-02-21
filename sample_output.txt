@@ -19,3 +19,154 @@
 [17:13:53] S4 > Executing Task 1
 [17:13:54] S1 > Finished Task 0
 [17:13:54] S1 > Idle
+
+
+Output V4: with settings:
+  NSlaves = 5,
+  MaxTaskLength = 20s,
+  MasterMaxIdle = 3s
+[16:13:25] MT > Going to sleep for 1 seconds
+[16:13:25] S4 > Idle
+[16:13:25] S3 > Idle
+[16:13:25] S5 > Idle
+[16:13:25] S2 > Idle
+[16:13:25] S1 > Idle
+[16:13:26] MT > Task 0 with length 10 generated
+[16:13:26] MT > Added task 0 to queue
+[16:13:26] MT > Going to sleep for 1 seconds
+[16:13:26] S5 > Task 0 with length 10 received
+[16:13:26] S5 > Executing Task 0
+[16:13:27] MT > Task 1 with length 18 generated
+[16:13:27] MT > Added task 1 to queue
+[16:13:27] S4 > Task 1 with length 18 received
+[16:13:27] MT > Going to sleep for 1 seconds
+[16:13:27] S4 > Executing Task 1
+[16:13:28] MT > Task 2 with length 15 generated
+[16:13:28] MT > Added task 2 to queue
+[16:13:28] S1 > Task 2 with length 15 received
+[16:13:28] MT > Going to sleep for 1 seconds
+[16:13:28] S1 > Executing Task 2
+[16:13:29] MT > Task 3 with length 17 generated
+[16:13:29] MT > Added task 3 to queue
+[16:13:29] MT > Going to sleep for 2 seconds
+[16:13:29] S3 > Task 3 with length 17 received
+[16:13:29] S3 > Executing Task 3
+[16:13:31] MT > Task 4 with length 6 generated
+[16:13:31] MT > Added task 4 to queue
+[16:13:31] MT > Going to sleep for 2 seconds
+[16:13:31] S2 > Task 4 with length 6 received
+[16:13:31] S2 > Executing Task 4
+[16:13:33] MT > Task 5 with length 2 generated
+[16:13:33] MT > Added task 5 to queue
+[16:13:33] MT > Going to sleep for 1 seconds
+[16:13:34] MT > Task 6 with length 9 generated
+[16:13:34] MT > Added task 6 to queue
+[16:13:34] MT > Going to sleep for 2 seconds
+[16:13:36] S5 > Finished Task 0
+[16:13:36] S5 > Idle
+[16:13:36] S5 > Task 5 with length 2 received
+[16:13:36] S5 > Executing Task 5
+[16:13:36] MT > Task 7 with length 6 generated
+[16:13:36] MT > Added task 7 to queue
+[16:13:36] MT > Going to sleep for 1 seconds
+[16:13:37] MT > Task 8 with length 4 generated
+[16:13:37] MT > Added task 8 to queue
+[16:13:37] MT > Going to sleep for 1 seconds
+[16:13:38] S2 > Finished Task 4
+[16:13:38] S2 > Idle
+[16:13:38] S2 > Task 6 with length 9 received
+[16:13:38] S2 > Executing Task 6
+[16:13:38] S5 > Finished Task 5
+[16:13:38] S5 > Idle
+[16:13:38] S5 > Task 7 with length 6 received
+[16:13:38] S5 > Executing Task 7
+[16:13:38] MT > Task 9 with length 13 generated
+[16:13:38] MT > Added task 9 to queue
+[16:13:38] MT > Going to sleep for 1 seconds
+[16:13:39] MT > Task 10 with length 12 generated
+[16:13:39] MT > Added task 10 to queue
+[16:13:39] MT > Going to sleep for 2 seconds
+[16:13:41] MT > Task 11 with length 16 generated
+[16:13:41] MT > Added task 11 to queue
+[16:13:41] MT > Going to sleep for 2 seconds
+[16:13:43] S1 > Finished Task 2
+[16:13:43] S1 > Idle
+[16:13:43] S1 > Task 8 with length 4 received
+[16:13:43] S1 > Executing Task 8
+[16:13:43] MT > Task 12 with length 1 generated
+[16:13:43] MT > Added task 12 to queue
+[16:13:43] MT > Going to sleep for 1 seconds
+[16:13:44] S5 > Finished Task 7
+[16:13:44] S5 > Idle
+[16:13:44] S5 > Task 9 with length 13 received
+[16:13:44] S5 > Executing Task 9
+[16:13:44] MT > Task 13 with length 1 generated
+[16:13:44] MT > Added task 13 to queue
+[16:13:44] MT > Going to sleep for 2 seconds
+[16:13:45] S4 > Finished Task 1
+[16:13:45] S4 > Idle
+[16:13:45] S4 > Task 10 with length 12 received
+[16:13:45] S4 > Executing Task 10
+[16:13:46] MT > Task 14 with length 13 generated
+[16:13:46] MT > Added task 14 to queue
+[16:13:46] MT > Going to sleep for 2 seconds
+[16:13:46] S3 > Finished Task 3
+[16:13:46] S3 > Idle
+[16:13:46] S3 > Task 11 with length 16 received
+[16:13:46] S3 > Executing Task 11
+[16:13:47] S2 > Finished Task 6
+[16:13:47] S2 > Idle
+[16:13:47] S2 > Task 12 with length 1 received
+[16:13:47] S2 > Executing Task 12
+[16:13:47] S1 > Finished Task 8
+[16:13:47] S1 > Idle
+[16:13:47] S1 > Task 13 with length 1 received
+[16:13:47] S1 > Executing Task 13
+[16:13:48] S2 > Finished Task 12
+[16:13:48] S2 > Idle
+[16:13:48] S2 > Task 14 with length 13 received
+[16:13:48] S2 > Executing Task 14
+[16:13:48] S1 > Finished Task 13
+[16:13:48] S1 > Idle
+[16:13:48] MT > Task 15 with length 5 generated
+[16:13:48] MT > Added task 15 to queue
+[16:13:48] MT > Going to sleep for 2 seconds
+[16:13:49] S1 > Task 15 with length 5 received
+[16:13:49] S1 > Executing Task 15
+[16:13:50] MT > Task 16 with length 16 generated
+[16:13:50] MT > Added task 16 to queue
+[16:13:50] MT > Going to sleep for 1 seconds
+[16:13:51] MT > Task 17 with length 19 generated
+[16:13:51] MT > Added task 17 to queue
+[16:13:51] MT > Going to sleep for 1 seconds
+[16:13:52] MT > Task 18 with length 7 generated
+[16:13:52] MT > Added task 18 to queue
+[16:13:52] MT > Going to sleep for 1 seconds
+[16:13:53] MT > Task 19 with length 8 generated
+[16:13:53] MT > Added task 19 to queue
+[16:13:53] MT > Going to sleep for 1 seconds
+[16:13:54] S1 > Finished Task 15
+[16:13:54] S1 > Idle
+[16:13:54] S1 > Task 16 with length 16 received
+[16:13:54] S1 > Executing Task 16
+[16:13:54] MT > Task 20 with length 18 generated
+[16:13:54] MT > Added task 20 to queue
+[16:13:54] MT > Going to sleep for 1 seconds
+[16:13:55] MT > Task 21 with length 12 generated
+[16:13:55] MT > Added task 21 to queue
+[16:13:55] MT > Going to sleep for 1 seconds
+[16:13:56] MT > Task 22 with length 1 generated
+[16:13:56] MT > Waiting for Queue to be non-full
+[16:13:57] S4 > Finished Task 10
+[16:13:57] S4 > Idle
+[16:13:57] S4 > Task 17 with length 19 received
+[16:13:57] S4 > Executing Task 17
+[16:13:57] S5 > Finished Task 9
+[16:13:57] S5 > Idle
+[16:13:57] S5 > Task 18 with length 7 received
+[16:13:57] S5 > Executing Task 18
+[16:13:57] MT > Added task 22 to queue
+[16:13:57] MT > Going to sleep for 1 seconds
+[16:13:58] MT > Task 23 with length 17 generated
+[16:13:58] MT > Added task 23 to queue
+[16:13:58] MT > Going to sleep for 2 seconds
