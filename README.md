@@ -28,15 +28,13 @@ _Explain the design of your program and how syncronization works._
   
 ## Build instructions
 
-Clone the project to a local repository:   `git clone https://github.com/1EC4/cosc315p2.git`
-
 **C Implementation:**
 
-Change to C directory: `cd cosc315p2/C Implementation`
-
-Build the program: `make Program`
-
-Run the program: `./Program`
+  1. Clone the project to a local repository:   `git clone https://github.com/1EC4/cosc315p2.git`
+  2. Change to C directory: `cd cosc315p2/C Implementation`
+  3. Build the program: `make Program`
+  4. Run the program: `./Program`
+  5. Delete the progam:  `make clean` (optional)
 
 **Java Implementation:**
 
