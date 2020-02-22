@@ -40,12 +40,8 @@ _Explain the design of your program and how syncronization works._
 **C Implementation:**
 
   2. Navigate to the C directory: `cd cosc315p2/C Implementation`
-  3. Build the program: `make Program`
+  3. Build the program: `make`
   4. Run the program: `./Program`
-  5. Delete the progam:  `make clean` _(optional)_
-
-
-
 
 ## Sample Output
 Check out [this example file](sample_output.txt) for sample output.
@@ -70,7 +66,7 @@ Check out [this example file](sample_output.txt) for sample output.
   - README
   - Sample output
   - Master and slave threads
-  - 
+  - Makefile
 
 ## Programming Experience
 
