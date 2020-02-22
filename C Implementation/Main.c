@@ -20,9 +20,9 @@ int main() {
 
     // Wait until threads are done (do not exit main function)
     pthread_join(master, NULL);
-    for (int thread = 0; thread < NUM_SLAVES; thread++) {
-        pthread_join(slaves[thread], NULL);
-    }
+    // for (int thread = 0; thread < NUM_SLAVES; thread++) {
+    //    pthread_join(slaves[thread], NULL);
+    // }
 
     return EXIT_SUCCESS;
 }

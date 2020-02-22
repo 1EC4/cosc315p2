@@ -5,9 +5,9 @@
 #include "includes/functions.h"
 
 // Delcare global variables for Task
-next_id = 1;
+next_id = 0;
 
-// Generate a task with a length between 1 and maxLength
+// Each request is assigned a sequentially increasing ID and a random length between 1 and M seconds
 Task generateTask(int maxLength) {
     int length = (rand() % maxLength) + 1;
     Task newTask = {.id = next_id++, .length = length};
