@@ -39,8 +39,8 @@ _Explain the design of your program and how syncronization works._
   
 **C Implementation:**
 
-  2. Navigate to the C directory: `cd cosc315p2/C Implementation`
-  3. Build the program: `make`
+  2. Navigate to the C directory: `cd "cosc315p2/C Implementation"`
+  3. Build the program: `gcc -o Program Main.c Master.c SafeQueue.c Slave.c Task.c -pthread` or `make`
   4. Run the program: `./Program`
 
 ## Sample Output
