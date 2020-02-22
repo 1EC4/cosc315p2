@@ -1,0 +1,3 @@
+#define NUM_SLAVES 5
+#define MAX_TASK_LEN 20
+#define MAX_MASTER_IDLE 10
