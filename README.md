@@ -32,10 +32,9 @@ _Explain the design of your program and how syncronization works._
   
 **Java Implementation:**
 
-  2. Step 2 - Java
-  3. Step 3 - Java
-  4. Step 4 - Java
-  5. Step 5 - Java
+  2. Navigate to the Java directory: `cd "cosc315p2/Java Implementation"`
+  3. Build the program: `make`
+  4. Run the program: `java Main`
   
 **C Implementation:**
 
