@@ -48,7 +48,7 @@ Check out [this example file](sample_output.txt) for sample output.
 ## Contributors
 - **Anthony Boyko**
   - Kickstarted the C implementation and setup the program framework
-  - 
+  - Safequeue file in C implementation
   - 
   - 
   - 
