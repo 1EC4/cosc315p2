@@ -1,8 +1,0 @@
-#include <stdio.h>
-#include "parameters.h"
-
-struct Task {
-  int id; // id number of the task
-  int length; // length of task in seconds
-
-};
