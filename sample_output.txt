@@ -1,4 +1,4 @@
-Java Implemntation - Smaple Output
+Java Implemntation - Sample Output
 
 Output V4: with settings:
   NSlaves = 5,
