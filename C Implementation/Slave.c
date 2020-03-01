@@ -25,7 +25,6 @@ void *run_slave(void *id) {
         log(thread, message);
 
         // Busy slave threads are set to sleep for the duration of the request length
-        //int length = (rand() % MAX_TASK_LEN) + 1;
         sleep(request.length);
     }
 

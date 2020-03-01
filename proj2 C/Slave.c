@@ -9,6 +9,7 @@ void *run_slave(slaveArgs *args) {
     int thread_id = args->id;
     char thread[3];
     while(TRUE) {
+        // Print initial thread status
         sprintf(&thread, "S%d", thread_id);
         char message[] = "Idle";
 	    log(thread, message);

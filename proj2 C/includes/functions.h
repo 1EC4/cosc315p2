@@ -13,14 +13,14 @@ Task generateTask(int maxLength);
 // Constructor for the SafeQueue
 SafeQueue *init_SafeQueue(int len);
 
-// returns true or false if the queue is empty
+// Returns true or false if the queue is empty
 int  SafeQueue_empty(SafeQueue *queue);
 
-// increments the index for the position to be added to the queue with a circular buffer
+// Increments the index for the position to be added to the queue with a circular buffer
 int SafeQueue_indexPlus(SafeQueue *queue, int index);
 
-// adds a item to the next position in the queue 
+// Adds a item to the next position in the queue 
 void SafeQueue_push(SafeQueue *queue, Task item);
 
-// removes the next item in the queue 
+// Removes the next item in the queue 
 Task SafeQueue_poll(SafeQueue *queue);

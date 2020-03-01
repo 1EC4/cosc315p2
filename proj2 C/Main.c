@@ -17,20 +17,17 @@ int main() {
 
     // Create and run slave threads
     pthread_t slaves[NUM_SLAVES];
-    //assigning memory for the paramaters to call run_slave for each thread
+
+    // Assign memory for the paramaters to call run_slave for each thread
     slaveArgs args[NUM_SLAVES]; 
-    
     for (int thread = 0; thread < NUM_SLAVES; thread++) {
         slaveArgs argsTemp = { argsTemp.id = thread + 1, argsTemp.queue = &queue };
         args[thread] = argsTemp;
         pthread_create(&slaves[thread], NULL, run_slave, (void *) &args[thread]);
     }
 
-    // Wait until threads are done (do not exit main function)
+    // Wait until master thread is done (do not exit main function)
     pthread_join(master, NULL);
-    // for (int thread = 0; thread < NUM_SLAVES; thread++) {
-    //    pthread_join(slaves[thread], NULL);
-    // }
 
     return EXIT_SUCCESS;
 }
