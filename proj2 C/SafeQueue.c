@@ -6,8 +6,7 @@
 
 // SafeQueue Code
 
-
-//constructor for the SafeQueue
+// constructor for the SafeQueue
 SafeQueue *init_SafeQueue(int len) {
   SafeQueue *queue = (SafeQueue *) malloc(sizeof(SafeQueue));
   queue->length = len; 
@@ -56,4 +55,3 @@ Task SafeQueue_poll(SafeQueue *queue) {
 
   return item;
 }
-

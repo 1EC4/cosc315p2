@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "parameters.h": "c",
+        "datatypes.h": "c"
+    }
+}

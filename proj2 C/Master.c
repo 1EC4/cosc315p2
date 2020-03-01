@@ -26,11 +26,10 @@ void *run_master(void *queue) {
         sprintf(&message, "Task %d with length %d generated", request.id, request.length);
         log(thread, message);
 	
-	//add the task to the queue and if the queue is full SafeQueue_push will be asleep
-	SafeQueue_push(queue, request);
-	//next iteration of the loop will put the master back to sleep 
+        // Add the task to the queue and if the queue is full SafeQueue_push will be asleep
+        SafeQueue_push(queue, request);
 
-
+        // Next iteration of the loop will put the master back to sleep
     }
     return NULL;
 }
