@@ -1,24 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <pthread.h>
-#include <semaphore.h>
-#include "parameters.h"
-#include "datatypes.h"
-//#include "functions.h"
+#include "includes/datatypes.h"
+#include "includes/parameters.h"
 
 // SafeQueue Code
 
-typedef struct SafeQueue {
-  Task *buffer; // this is the array that holds the Task objects for the queue
-  // this is the number of items the buffer can hold based on the number of slaves
-  int length; 
-  int nextIn; // next index where a task is added to the Queue
-  int nextOut; // next index where a task is
-  sem_t mutex; // this is the lock for the Queue
-  sem_t onQueue; // number of items on the Queue
-  sem_t tillFull; // number of items till the Queue is full
-  
-} SafeQueue;
 
 //constructor for the SafeQueue
 SafeQueue *init_SafeQueue(int len) {
@@ -70,29 +57,3 @@ Task SafeQueue_poll(SafeQueue *queue) {
   return item;
 }
 
-// for testing of SafeQueue
-int main() {
-
-  SafeQueue test = *init_SafeQueue(5);
-  int qEmpty = SafeQueue_empty(&test);
-  Task tTask;
-  tTask.id = 1;
-  tTask.length = 1;
-
-  printf("The value of Queue Empty is: %d\n", qEmpty);
-
-  SafeQueue_push(&test, tTask);
-  Task currTask =  test.buffer[0];
-  int idAtCurrLoc = currTask.id;
-  int lenCurrtask = currTask.length;
-
-  printf("the current task in the queue has a id: %d and length: %d\n", idAtCurrLoc, lenCurrtask);
-
-  Task polledTask = SafeQueue_poll(&test);
-  int idPolled = polledTask.id;
-  int lengthPolled = polledTask.length;
-
-  printf("the tasked polled has id: %d and length: %d\n", idPolled, lengthPolled);
-  
-  return 0;
-}
