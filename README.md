@@ -9,7 +9,7 @@
 
 ## Description
 
-_Explain the design of your program and how syncronization works._
+_TODO: Explain the design of your program and how syncronization works._
 
 ## Core Features
 **Request scheduling using threads and synchronization:**
@@ -47,32 +47,53 @@ Check out [this example file](sample_output.txt) for sample output.
 
 ## Contributors
 - **Anthony Boyko**
-  - Kickstarted the C implementation and setup the program framework
-  - Safequeue file in C implementation
-  - 
-  - 
-  - 
-
+  - Java Implementation - tested and reviewed functionality
+  - C Implementation - Setup the program framework based on the Java implementation
+  - C Implementation - Built the SafeQueue using semaphores for concurrency
+  - C Implementation - Implemented task generation and integrated with run-master function
+  - C Implementation - Integrated SafeQueue push and poll functions with run_master and run_slave functions
+  - _TODO: Sample output - Added sample output from C Implementation_
+  - _TODO: README - Commented on the effort and ease of coding the problem in different languages_
+  - _TODO: Group Assessment - Completed individual group assment and uploaded to Canvas (without project files)_
+  
 - **Nick Rieske**
-  - Java
-  - 
-  - 
-  - 
-  - 
+  - Java Implementation - Setup the program framework based on the object oriented model
+  - Java Implementation - Built the main function to create and run the master and slave threads
+  - Java Implementation - Built the master class with default run function
+  - Java Implementation - Built the slave class with default run function
+  - Java Implementation - Built the SafeQueue using monitors for concurrency
+  - Java Implementation - Integrated SafeQueue push and poll functions with the master and slave threads
+  - Java Implementation - Built helper method for determining current time and printing output to console
+  - _TODO: C Implemention - tested and confirmed functionality aligns with assignment guidelines_
+  - Sample Output - Added sample out put from Java Implementation
+  - Makefile - Built Makefile for the Java Implementation to the create executable file
+  - README - Added build instructions for the Java Implentation
+  - _TODO: README - Describe any command line arguments to specify parameters for the Java Implementation_
+  - _TODO: README - Add a brief discussion describing your experience implementing this problem in Java and C_
+  - _TODO: Group Assessment - Completed individual group assment and uploaded to Canvas (without project files)_
 
 - **Jonathan Gresl**
-  - C
-  - README
-  - Sample output
-  - Master and slave threads
-  - Makefile
+  - Java Implementation - tested and confirmed functionality aligns with assignment guidelines
+  - C Implementation - Framed out the main function to create and run the master and slave threads
+  - C Implementation - Framed out the run_master function to sleep and print output
+  - C Implementation - Framed out the run_slave function to sleep and print output
+  - C Implementation - Built helper method for determining current time and printing output to console
+  - C Implementation - Code cleanup, documentation, and refractoring
+  - Sample Output - Added sample output from the Java Implementation
+  - Makefile - Built Makefile for the C implementation to create the executable file
+  - README - Framed out README template and and created linked sections for each assignment expectation
+  - _TODO: README - Explain the design of your program and how syncronization works_
+  - README - Added the core features and design choices for the program
+  - README - Added build instructions for the C Implentation
+  - _TODO: README - Describe any command line arguments to specify parameters for the C Implementation_
+  - README - Updated the contributions section as work was completed
+  - _TODO: Sample output - Added sample output from C Implementation_
+  - _TODO: Group Assessment - Completed individual group assment and uploaded to Canvas (with project files)_
 
 ## Programming Experience
 
-_Add a brief discussion describing your experience implementing this problem in Java and C_
+_TODO: Add a brief discussion describing your experience implementing this problem in Java and C_
 
-_Comment on the amount of effort and ease of coding the problem in different languages_
-
-_Add assessment(s) to ZIp file before submitting (Does everyone submit separately?)_
+_TODO: Comment on the amount of effort and ease of coding the problem in different languages_
 
 [Back to The Top](#cosc-315-operating-systems---project-2)
