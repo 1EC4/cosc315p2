@@ -80,7 +80,7 @@ Check out [this example file](sample_output.txt) for sample output.
   - Java Implementation - Built the SafeQueue using monitors for concurrency
   - Java Implementation - Integrated SafeQueue push and poll functions with the master and slave threads
   - Java Implementation - Built helper method for determining current time and printing output to console
-  - **C Implemention - tested and confirmed functionality aligns with assignment guidelines_**
+  - **_C Implemention - tested and confirmed functionality aligns with assignment guidelines_**
   - Sample Output - Added sample out put from Java Implementation
   - Makefile - Built Makefile for the Java Implementation to the create executable file
   - README - Added build instructions for the Java Implentation
