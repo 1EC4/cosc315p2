@@ -94,7 +94,6 @@ Check out [this example file](sample_output.txt) for sample output.
   - C Implementation - Framed out the run_master and run_slave functions to sleep and print output
   - C Implementation - Built helper method for determining current time and printing output to console
   - C Implementation - Code cleanup, documentation, and refractoring
-  - Sample Output - Added sample output from the Java Implementation
   - Makefile - Built Makefile for the C implementation to create the executable file
   - README - Framed out README template and and created linked sections for each assignment expectation
   - **_README - Added the design description and how syncronization works_**
@@ -103,7 +102,6 @@ Check out [this example file](sample_output.txt) for sample output.
   - README - Added build instructions for the C Implentation
   - **_README - Added command line arguments to specify parameters for the C Implementation_**
   - README - Updated the contributions section as work was completed
-  - **_Sample Output - Added sample output from C Implementation_**
   - **_Group Assessment - Completed individual group assment and uploaded to Canvas (with project files)_**
 
 ## Programming Experience
