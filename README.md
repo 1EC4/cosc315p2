@@ -101,7 +101,7 @@ Check out [this example file](sample_output.txt) for sample output.
   - **_README - Added explaination and motivation for the design choices_**
   - README - Added the core features and design choices for the program
   - README - Added build instructions for the C Implentation
-  - **_EADME - Added command line arguments to specify parameters for the C Implementation_
+  - **_README - Added command line arguments to specify parameters for the C Implementation_**
   - README - Updated the contributions section as work was completed
   - **_Sample output - Added sample output from C Implementation_**
   - **_Group Assessment - Completed individual group assment and uploaded to Canvas (with project files)_**
