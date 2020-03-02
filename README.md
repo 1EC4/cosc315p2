@@ -4,8 +4,10 @@
 - [Description](#description)
 - [Core Features](#core-features)
 - [Design Choices](#design-choices)
+- [Build Instructions](#build-instructions)
 - [Sample Output](#sample-output)
 - [Contributors](#contributors)
+- [Programming Experience](#programming-experience)
 
 ## Description
 
@@ -25,6 +27,8 @@
   1. Dispatch requests using a bounded buffer producer-consumer framework
   2. Synchronization implemented in Java using monitors
   3. Synchronization implemented in C using semaphores
+  
+  **_TODO: README - Explain and motivate the design choices_**
   
 ## Build instructions
 
@@ -90,6 +94,7 @@ Check out [this example file](sample_output.txt) for sample output.
   - Makefile - Built Makefile for the C implementation to create the executable file
   - README - Framed out README template and and created linked sections for each assignment expectation
   - **_TODO: README - Explain the design of your program and how syncronization works_**
+  - **_TODO: README - Explain and motivate the design choices_**
   - README - Added the core features and design choices for the program
   - README - Added build instructions for the C Implentation
   - **_TODO: README - Describe any command line arguments to specify parameters for the C Implementation_
