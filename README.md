@@ -69,7 +69,7 @@ Check out [this example file](sample_output.txt) for sample output.
   - **_Sample Output - Added sample output from C Implementation_**
   - **_Sample Output - Added sample output from Java Implementation_**
   - **_README - Commented on the effort and ease of coding the problem in different languages_**
-  - **_Group Assessment - Completed individual group assment and uploaded to Canvas (without project files)_**
+  - **_Group Assessment - Completed individual group assessment and uploaded to Canvas (without project files)_**
   
 - **Nick Rieske**
   - Organization - Setup GitHub repository with inital code and shared with group members
@@ -86,7 +86,7 @@ Check out [this example file](sample_output.txt) for sample output.
   - README - Added build instructions for the Java Implentation
   - **_README - Added command line arguments to specify parameters for the Java Implementation_**
   - **_README - Added a brief discussion describing your experience implementing this problem in Java and C_**
-  - **_Group Assessment - Completed individual group assment and uploaded to Canvas (without project files)_**
+  - **_Group Assessment - Completed individual group assessment and uploaded to Canvas (without project files)_**
 
 - **Jonathan Gresl**
   - Java Implementation - tested and confirmed functionality aligns with assignment guidelines
@@ -97,12 +97,12 @@ Check out [this example file](sample_output.txt) for sample output.
   - Makefile - Built Makefile for the C implementation to create the executable file
   - README - Framed out README template and and created linked sections for each assignment expectation
   - **_README - Added the design description and how syncronization works_**
-  - **_README - Added explaination and motivation for the design choices_**
+  - **_README - Added explanation and motivation for the design choices_**
   - README - Added the core features and design choices for the program
   - README - Added build instructions for the C Implentation
   - **_README - Added command line arguments to specify parameters for the C Implementation_**
   - README - Updated the contributions section as work was completed
-  - **_Group Assessment - Completed individual group assment and uploaded to Canvas (with project files)_**
+  - **_Group Assessment - Completed individual group assessment and uploaded to Canvas (with project files)_**
 
 ## Programming Experience
 
