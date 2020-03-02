@@ -65,10 +65,10 @@ Check out [this example file](sample_output.txt) for sample output.
   - C Implementation - Built the SafeQueue using semaphores for concurrency
   - C Implementation - Implemented task generation and integrated with run-master function
   - C Implementation - Integrated SafeQueue push and poll functions with run_master and run_slave functions
-  - **_TODO: Sample output - Added sample output from C Implementation_**
-  - **_TODO: Sample output - Added sample output from Java Implementation_**
-  - **_TODO: README - Commented on the effort and ease of coding the problem in different languages_**
-  - **_TODO: Group Assessment - Completed individual group assment and uploaded to Canvas (without project files)_**
+  - **_Sample output - Added sample output from C Implementation_**
+  - **_Sample output - Added sample output from Java Implementation_**
+  - **_README - Commented on the effort and ease of coding the problem in different languages_**
+  - **_Group Assessment - Completed individual group assment and uploaded to Canvas (without project files)_**
   
 - **Nick Rieske**
   - Organization - Setup GitHub repository with inital code and shared with group members
@@ -79,13 +79,13 @@ Check out [this example file](sample_output.txt) for sample output.
   - Java Implementation - Built the SafeQueue using monitors for concurrency
   - Java Implementation - Integrated SafeQueue push and poll functions with the master and slave threads
   - Java Implementation - Built helper method for determining current time and printing output to console
-  - **_TODO: C Implemention - tested and confirmed functionality aligns with assignment guidelines_**
+  - **C Implemention - tested and confirmed functionality aligns with assignment guidelines_**
   - Sample Output - Added sample out put from Java Implementation
   - Makefile - Built Makefile for the Java Implementation to the create executable file
   - README - Added build instructions for the Java Implentation
-  - **_TODO: README - Describe any command line arguments to specify parameters for the Java Implementation_**
-  - **_TODO: README - Add a brief discussion describing your experience implementing this problem in Java and C_**
-  - **_TODO: Group Assessment - Completed individual group assment and uploaded to Canvas (without project files)_**
+  - **_README - Added command line arguments to specify parameters for the Java Implementation_**
+  - **_README - Added a brief discussion describing your experience implementing this problem in Java and C_**
+  - **_Group Assessment - Completed individual group assment and uploaded to Canvas (without project files)_**
 
 - **Jonathan Gresl**
   - Java Implementation - tested and confirmed functionality aligns with assignment guidelines
@@ -97,14 +97,14 @@ Check out [this example file](sample_output.txt) for sample output.
   - Sample Output - Added sample output from the Java Implementation
   - Makefile - Built Makefile for the C implementation to create the executable file
   - README - Framed out README template and and created linked sections for each assignment expectation
-  - **_TODO: README - Explain the design of your program and how syncronization works_**
-  - **_TODO: README - Explain and motivate the design choices_**
+  - **_README - Described the design of your program and how syncronization works_**
+  - **_README - Added explaination and motivation for the design choices_**
   - README - Added the core features and design choices for the program
   - README - Added build instructions for the C Implentation
-  - **_TODO: README - Describe any command line arguments to specify parameters for the C Implementation_
+  - **_EADME - Added command line arguments to specify parameters for the C Implementation_
   - README - Updated the contributions section as work was completed
-  - **_TODO: Sample output - Added sample output from C Implementation_**
-  - **_TODO: Group Assessment - Completed individual group assment and uploaded to Canvas (with project files)_**
+  - **_Sample output - Added sample output from C Implementation_**
+  - **_Group Assessment - Completed individual group assment and uploaded to Canvas (with project files)_**
 
 ## Programming Experience
 
