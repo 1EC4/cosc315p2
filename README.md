@@ -53,6 +53,9 @@
 ## Sample Output
 Check out [this example file](sample_output.txt) for sample output.
 
+ **_TODO: Sample output - Added sample output from C Implementation_**
+ **_TODO: Sample output - Added sample output from Java Implementation_**
+
 ## Contributors
 - **Anthony Boyko**
   - Organization - Setup weekly meetings and communicated the project requirements
@@ -63,6 +66,7 @@ Check out [this example file](sample_output.txt) for sample output.
   - C Implementation - Implemented task generation and integrated with run-master function
   - C Implementation - Integrated SafeQueue push and poll functions with run_master and run_slave functions
   - **_TODO: Sample output - Added sample output from C Implementation_**
+  - **_TODO: Sample output - Added sample output from Java Implementation_**
   - **_TODO: README - Commented on the effort and ease of coding the problem in different languages_**
   - **_TODO: Group Assessment - Completed individual group assment and uploaded to Canvas (without project files)_**
   
