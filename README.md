@@ -91,8 +91,7 @@ Check out [this example file](sample_output.txt) for sample output.
 - **Jonathan Gresl**
   - Java Implementation - tested and confirmed functionality aligns with assignment guidelines
   - C Implementation - Framed out the main function to create and run the master and slave threads
-  - C Implementation - Framed out the run_master function to sleep and print output
-  - C Implementation - Framed out the run_slave function to sleep and print output
+  - C Implementation - Framed out the run_master and run_slave functions to sleep and print output
   - C Implementation - Built helper method for determining current time and printing output to console
   - C Implementation - Code cleanup, documentation, and refractoring
   - Sample Output - Added sample output from the Java Implementation
