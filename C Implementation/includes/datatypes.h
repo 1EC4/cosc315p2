@@ -24,13 +24,10 @@ typedef struct SafeQueue {
   sem_t mutex; // this is the lock for the Queue
   sem_t onQueue; // number of items on the Queue
   sem_t tillFull; // number of items till the Queue is full
-  
 } SafeQueue;
 
-
-//arguements for the run slave function
+// Arguements for the run slave function
 typedef struct slaveArgs {
-  int id; //id for the slave
-  SafeQueue* queue; //pointer to the queue
-
+  int id; // id for the slave
+  SafeQueue* queue; // pointer to the queue
 } slaveArgs;

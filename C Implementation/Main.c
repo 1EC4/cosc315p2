@@ -7,20 +7,45 @@
 #include "includes/functions.h"
 
 // Main function
-int main() {
+int main(int argc, char *argv[]) {
+    // Configure parameters with program arguments (if provided)
+    if (argc > 1) {
+        num_slaves = strtol(argv[1], NULL, 10);
+    } else {
+        num_slaves = 5; // Default
+    }
+
+    if (argc > 2) {
+        max_task_len = strtol(argv[2], NULL, 10);
+    } else {
+        max_task_len = 20; // Default
+    }
+
+    if (argc > 3) {
+        max_master_idle = strtol(argv[3], NULL, 10);
+    } else {
+        max_master_idle = 10; // Default
+    }
+
+    // Print program settings
+    printf("C Program: with settings:\n");
+    printf("  Nslaves = %d\n", num_slaves);
+    printf("  MaxTaskLength = %ds\n", max_task_len);
+    printf("  MasterMaxIdle = %ds\n", max_master_idle);
+
     // Create SafeQueue
-    SafeQueue queue = *init_SafeQueue(NUM_SLAVES);
+    SafeQueue queue = *init_SafeQueue(num_slaves);
   
     // Create and run master thread
     pthread_t master;
     pthread_create(&master, NULL, run_master, (void *) &queue);
 
     // Create and run slave threads
-    pthread_t slaves[NUM_SLAVES];
+    pthread_t slaves[num_slaves];
 
     // Assign memory for the paramaters to call run_slave for each thread
-    slaveArgs args[NUM_SLAVES]; 
-    for (int thread = 0; thread < NUM_SLAVES; thread++) {
+    slaveArgs args[num_slaves]; 
+    for (int thread = 0; thread < num_slaves; thread++) {
         slaveArgs argsTemp = { argsTemp.id = thread + 1, argsTemp.queue = &queue };
         args[thread] = argsTemp;
         pthread_create(&slaves[thread], NULL, run_slave, (void *) &args[thread]);

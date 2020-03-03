@@ -1,5 +1,5 @@
 CC = gcc
-CFLAGS = -g -Wall
+CFLAGS = -w -Wall
 LIBS = -pthread
 
 all:

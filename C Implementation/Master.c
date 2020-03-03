@@ -8,7 +8,7 @@
 void *run_master(void *queue) {
     while(TRUE) {
         // Sleep for a random duration between 1 and MAX_MASTER_IDLE (seconds)
-        int master_sleep = (rand() % MAX_MASTER_IDLE) + 1;
+        int master_sleep = (rand() % max_master_idle) + 1;
 
         // Print thread message to console
         char thread[] = "MT";
@@ -20,7 +20,7 @@ void *run_master(void *queue) {
         sleep(master_sleep);
 
         // The master thread produces a new request
-        Task request = generateTask(MAX_TASK_LEN);
+        Task request = generateTask(max_task_len);
         
         // Print thread message to console
         sprintf(&message, "Task %d with length %d generated", request.id, request.length);
