@@ -87,14 +87,14 @@ Check out [this example file](sample_output.txt) for sample output.
   - C Implementation - Built helper method for determining current time and printing output to console
   - C Implementation - Code cleanup, documentation, and refractoring
   - C Implementation - Added functionality to accept command line arguments to configure parameters
+  - Sample Output - Added sample output from C Implementation
   - Makefile - Built Makefile for the C implementation to create the executable file
   - README - Framed out README template and and created linked sections for each assignment expectation
-  - **_README - Added the design description and how syncronization works_**
-  - **_README - Added explanation and motivation for the design choices_**
   - README - Added the core features and design choices for the program
   - README - Added build instructions for the C Implentation and described command line arguments
   - README - Updated the contributions section as work was completed
-  - Sample Output - Added sample output from C Implementation
+  - **_README - Added the design description and how syncronization works_**
+  - **_README - Added explanation and motivation for the design choices_**
   - **_Group Assessment - Completed individual group assessment and uploaded to Canvas (with project files)_**
 
 ## Programming Experience
