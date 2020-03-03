@@ -149,3 +149,169 @@ Output V4: with settings:
 [16:13:58] MT > Task 23 with length 17 generated
 [16:13:58] MT > Added task 23 to queue
 [16:13:58] MT > Going to sleep for 2 seconds
+
+
+C Implemntation - Sample Output
+
+C Program: with settings:
+  Nslaves = 3
+  MaxTaskLength = 10s
+  MasterMaxIdle = 6s
+[23:58:20] MT > Going to sleep for 2 seconds
+[23:58:20] S1 > Idle
+[23:58:20] S2 > Idle
+[23:58:20] S3 > Idle
+[23:58:22] MT > Task 0 with length 7 generated
+[23:58:22] MT > Going to sleep for 4 seconds
+[23:58:22] S1 > Task 0 with length 7 received
+[23:58:26] MT > Task 1 with length 6 generated
+[23:58:26] MT > Going to sleep for 6 seconds
+[23:58:26] S2 > Task 1 with length 6 received
+[23:58:29] S1 > Task 0 finished
+[23:58:29] S1 > Idle
+[23:58:32] S2 > Task 1 finished
+[23:58:32] S2 > Idle
+[23:58:32] MT > Task 2 with length 6 generated
+[23:58:32] MT > Going to sleep for 5 seconds
+[23:58:32] S3 > Task 2 with length 6 received
+[23:58:37] MT > Task 3 with length 3 generated
+[23:58:37] MT > Going to sleep for 4 seconds
+[23:58:37] S1 > Task 3 with length 3 received
+[23:58:38] S3 > Task 2 finished
+[23:58:38] S3 > Idle
+[23:58:40] S1 > Task 3 finished
+
+
+C Program: with settings:
+  Nslaves = 12
+  MaxTaskLength = 40s
+  MasterMaxIdle = 4s
+[23:55:56] MT > Going to sleep for 4 seconds
+[23:55:56] S1 > Idle
+[23:55:56] S2 > Idle
+[23:55:56] S6 > Idle
+[23:55:56] S5 > Idle
+[23:55:56] S4 > Idle
+[23:55:56] S3 > Idle
+[23:55:56] S7 > Idle
+[23:55:56] S8 > Idle
+[23:55:56] S12 > Idle
+[23:55:56] S11 > Idle
+[23:55:56] S10 > Idle
+[23:55:56] S9 > Idle
+[23:56:00] MT > Task 0 with length 7 generated
+[23:56:00] MT > Going to sleep for 2 seconds
+[23:56:00] S1 > Task 0 with length 7 received
+[23:56:02] MT > Task 1 with length 36 generated
+[23:56:02] MT > Going to sleep for 2 seconds
+[23:56:02] S2 > Task 1 with length 36 received
+[23:56:04] MT > Task 2 with length 16 generated
+[23:56:04] MT > Going to sleep for 3 seconds
+[23:56:04] S6 > Task 2 with length 16 received
+[23:56:07] S1 > Task 0 finished
+[23:56:07] S1 > Idle
+[23:56:07] MT > Task 3 with length 13 generated
+[23:56:07] MT > Going to sleep for 2 seconds
+[23:56:07] S5 > Task 3 with length 13 received
+[23:56:09] MT > Task 4 with length 22 generated
+[23:56:09] MT > Going to sleep for 3 seconds
+[23:56:09] S4 > Task 4 with length 22 received
+[23:56:12] MT > Task 5 with length 28 generated
+[23:56:12] MT > Going to sleep for 3 seconds
+[23:56:12] S3 > Task 5 with length 28 received
+[23:56:15] MT > Task 6 with length 20 generated
+[23:56:15] MT > Going to sleep for 4 seconds
+[23:56:15] S7 > Task 6 with length 20 received
+[23:56:19] MT > Task 7 with length 7 generated
+[23:56:19] MT > Going to sleep for 1 seconds
+[23:56:19] S8 > Task 7 with length 7 received
+[23:56:20] S6 > Task 2 finished
+[23:56:20] S6 > Idle
+[23:56:20] S5 > Task 3 finished
+[23:56:20] S5 > Idle
+[23:56:20] MT > Task 8 with length 27 generated
+[23:56:20] MT > Going to sleep for 1 seconds
+[23:56:20] S12 > Task 8 with length 27 received
+[23:56:21] MT > Task 9 with length 17 generated
+[23:56:21] MT > Going to sleep for 4 seconds
+[23:56:21] S11 > Task 9 with length 17 received
+[23:56:25] MT > Task 10 with length 9 generated
+[23:56:25] MT > Going to sleep for 4 seconds
+[23:56:25] S10 > Task 10 with length 9 received
+[23:56:26] S8 > Task 7 finished
+[23:56:26] S8 > Idle
+[23:56:29] MT > Task 11 with length 30 generated
+[23:56:29] MT > Going to sleep for 3 seconds
+[23:56:29] S9 > Task 11 with length 30 received
+[23:56:31] S4 > Task 4 finished
+[23:56:31] S4 > Idle
+[23:56:32] MT > Task 12 with length 11 generated
+[23:56:32] MT > Going to sleep for 3 seconds
+[23:56:32] S1 > Task 12 with length 11 received
+[23:56:34] S10 > Task 10 finished
+[23:56:34] S10 > Idle
+[23:56:35] S7 > Task 6 finished
+[23:56:35] S7 > Idle
+[23:56:35] MT > Task 13 with length 4 generated
+[23:56:35] MT > Going to sleep for 4 seconds
+[23:56:35] S6 > Task 13 with length 4 received
+[23:56:38] S2 > Task 1 finished
+[23:56:38] S2 > Idle
+[23:56:38] S11 > Task 9 finished
+[23:56:38] S11 > Idle
+[23:56:39] MT > Task 14 with length 16 generated
+[23:56:39] MT > Going to sleep for 2 seconds
+[23:56:39] S6 > Task 13 finished
+[23:56:39] S6 > Idle
+[23:56:39] S6 > Task 14 with length 16 received
+[23:56:40] S3 > Task 5 finished
+[23:56:40] S3 > Idle
+[23:56:41] MT > Task 15 with length 3 generated
+[23:56:41] MT > Going to sleep for 3 seconds
+[23:56:41] S8 > Task 15 with length 3 received
+[23:56:43] S1 > Task 12 finished
+[23:56:43] S1 > Idle
+[23:56:44] S8 > Task 15 finished
+[23:56:44] S8 > Idle
+[23:56:44] MT > Task 16 with length 19 generated
+[23:56:44] MT > Going to sleep for 2 seconds
+[23:56:44] S4 > Task 16 with length 19 received
+[23:56:46] MT > Task 17 with length 8 generated
+[23:56:46] MT > Going to sleep for 2 seconds
+[23:56:46] S10 > Task 17 with length 8 received
+[23:56:47] S12 > Task 8 finished
+[23:56:47] S12 > Idle
+[23:56:48] MT > Task 18 with length 17 generated
+[23:56:48] MT > Going to sleep for 4 seconds
+[23:56:48] S7 > Task 18 with length 17 received
+[23:56:52] MT > Task 19 with length 3 generated
+[23:56:52] MT > Going to sleep for 2 seconds
+[23:56:52] S2 > Task 19 with length 3 received
+[23:56:54] S10 > Task 17 finished
+[23:56:54] S10 > Idle
+[23:56:54] MT > Task 20 with length 14 generated
+[23:56:54] MT > Going to sleep for 2 seconds
+[23:56:54] S11 > Task 20 with length 14 received
+[23:56:55] S6 > Task 14 finished
+[23:56:55] S6 > Idle
+[23:56:55] S2 > Task 19 finished
+[23:56:55] S2 > Idle
+[23:56:56] MT > Task 21 with length 40 generated
+[23:56:56] MT > Going to sleep for 1 seconds
+[23:56:56] S5 > Task 21 with length 40 received
+[23:56:57] MT > Task 22 with length 18 generated
+[23:56:57] MT > Going to sleep for 3 seconds
+[23:56:57] S3 > Task 22 with length 18 received
+[23:56:59] S9 > Task 11 finished
+[23:56:59] S9 > Idle
+[23:57:00] MT > Task 23 with length 5 generated
+[23:57:00] MT > Going to sleep for 4 seconds
+[23:57:00] S1 > Task 23 with length 5 received
+[23:57:03] S4 > Task 16 finished
+[23:57:03] S4 > Idle
+[23:57:04] MT > Task 24 with length 11 generated
+[23:57:04] MT > Going to sleep for 2 seconds
+[23:57:04] S8 > Task 24 with length 11 received
+[23:57:05] S7 > Task 18 finished
+[23:57:05] S7 > Idle
+[23:57:05] S1 > Task 23 finished
