@@ -45,10 +45,9 @@
 **C Implementation:**
 
   2. Navigate to the C directory: `cd "cosc315p2/C Implementation"`
-  3. Build the program: `gcc -o Program Main.c Master.c SafeQueue.c Slave.c Task.c -pthread` or `make`
-  4. Run the program: `./Program`
-  
-  **_TODO: README - Describe any command line arguments to specify parameters for the C Implementation_**
+  3. Build the program: `gcc -w -o Program Main.c Master.c SafeQueue.c Slave.c Task.c -pthread` or `make`
+  4. Run the program (arguments optional): `./Program [num_slaves] [max_task_len] [max_master_idle]`
+    - i.e. `./Program 5 20 10`
 
 ## Sample Output
 Check out [this example file](sample_output.txt) for sample output.
@@ -94,13 +93,14 @@ Check out [this example file](sample_output.txt) for sample output.
   - C Implementation - Framed out the run_master and run_slave functions to sleep and print output
   - C Implementation - Built helper method for determining current time and printing output to console
   - C Implementation - Code cleanup, documentation, and refractoring
+  - C Implementation - Added functionality to accept command line arguments to configure parameters
   - Makefile - Built Makefile for the C implementation to create the executable file
   - README - Framed out README template and and created linked sections for each assignment expectation
   - **_README - Added the design description and how syncronization works_**
   - **_README - Added explanation and motivation for the design choices_**
   - README - Added the core features and design choices for the program
   - README - Added build instructions for the C Implentation
-  - **_README - Added command line arguments to specify parameters for the C Implementation_**
+  - README - Added command line arguments to specify parameters for the C Implementation
   - README - Updated the contributions section as work was completed
   - **_Group Assessment - Completed individual group assessment and uploaded to Canvas (with project files)_**
 
