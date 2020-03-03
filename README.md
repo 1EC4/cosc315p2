@@ -76,8 +76,7 @@ Check out [this example file](sample_output.txt) for sample output.
   - **_C Implemention - tested and confirmed functionality aligns with assignment guidelines_**
   - Sample Output - Added sample out put from Java Implementation
   - Makefile - Built Makefile for the Java Implementation to the create executable file
-  - README - Added build instructions for the Java Implentation
-  - **_README - Added command line arguments to specify parameters for the Java Implementation_**
+  - README - Added build instructions for the Java Implentation **_and described command line arguments_**
   - **_README - Added a brief discussion describing your experience implementing this problem in Java and C_**
   - **_Group Assessment - Completed individual group assessment and uploaded to Canvas (without project files)_**
 
@@ -93,8 +92,7 @@ Check out [this example file](sample_output.txt) for sample output.
   - **_README - Added the design description and how syncronization works_**
   - **_README - Added explanation and motivation for the design choices_**
   - README - Added the core features and design choices for the program
-  - README - Added build instructions for the C Implentation
-  - README - Added command line arguments to specify parameters for the C Implementation
+  - README - Added build instructions for the C Implentation and described command line arguments
   - README - Updated the contributions section as work was completed
   - Sample Output - Added sample output from C Implementation
   - **_Group Assessment - Completed individual group assessment and uploaded to Canvas (with project files)_**
