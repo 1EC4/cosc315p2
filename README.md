@@ -52,10 +52,6 @@
 ## Sample Output
 Check out [this example file](sample_output.txt) for sample output.
 
- **_TODO: Sample output - Added sample output from C Implementation_**
- 
- **_TODO: Sample output - Added sample output from Java Implementation_**
-
 ## Contributors
 - **Anthony Boyko**
   - Organization - Setup weekly meetings and communicated the project requirements
@@ -65,8 +61,6 @@ Check out [this example file](sample_output.txt) for sample output.
   - C Implementation - Built the SafeQueue using semaphores for concurrency
   - C Implementation - Implemented task generation and integrated with run-master function
   - C Implementation - Integrated SafeQueue push and poll functions with run_master and run_slave functions
-  - **_Sample Output - Added sample output from C Implementation_**
-  - **_Sample Output - Added sample output from Java Implementation_**
   - **_README - Commented on the effort and ease of coding the problem in different languages_**
   - **_Group Assessment - Completed individual group assessment and uploaded to Canvas (without project files)_**
   
@@ -102,6 +96,7 @@ Check out [this example file](sample_output.txt) for sample output.
   - README - Added build instructions for the C Implentation
   - README - Added command line arguments to specify parameters for the C Implementation
   - README - Updated the contributions section as work was completed
+  - Sample Output - Added sample output from C Implementation
   - **_Group Assessment - Completed individual group assessment and uploaded to Canvas (with project files)_**
 
 ## Programming Experience
