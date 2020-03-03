@@ -47,7 +47,7 @@
   2. Navigate to the C directory: `cd "cosc315p2/C Implementation"`
   3. Build the program: `gcc -w -o Program Main.c Master.c SafeQueue.c Slave.c Task.c -pthread` or `make`
   4. Run the program (arguments optional): `./Program [num_slaves] [max_task_len] [max_master_idle]`
-    - i.e. `./Program 5 20 10`
+        - Example: `./Program 5 20 10`
 
 ## Sample Output
 Check out [this example file](sample_output.txt) for sample output.
