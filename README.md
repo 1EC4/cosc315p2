@@ -55,7 +55,7 @@ Check out [this example file](sample_output.txt) for sample output.
 ## Contributors
 - **Anthony Boyko**
   - Organization - Setup weekly meetings and communicated the project requirements
-  - Java Implementation - tested and confirmed functionality aligns with assignment guidelines
+  - Java Implementation - Tested and confirmed functionality aligns with assignment guidelines
   - C Implementation - Setup the program framework based on the Java implementation
   - C Implementation - Created header files for the parameters, datatypes, and functions
   - C Implementation - Built the SafeQueue using semaphores for concurrency
@@ -81,7 +81,7 @@ Check out [this example file](sample_output.txt) for sample output.
   - **_Group Assessment - Completed individual group assessment and uploaded to Canvas (without project files)_**
 
 - **Jonathan Gresl**
-  - Java Implementation - tested and confirmed functionality aligns with assignment guidelines
+  - Java Implementation - Tested and confirmed functionality aligns with assignment guidelines
   - C Implementation - Framed out the main function to create and run the master and slave threads
   - C Implementation - Framed out the run_master and run_slave functions to sleep and print output
   - C Implementation - Built helper method for determining current time and printing output to console
