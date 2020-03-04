@@ -73,8 +73,8 @@ Check out [this example file](sample_output.txt) for sample output.
   - C Implementation - Built the SafeQueue using semaphores for concurrency
   - C Implementation - Implemented task generation and integrated with run-master function
   - C Implementation - Integrated SafeQueue push and poll functions with run_master and run_slave functions
-  - README - Commented on the effort and ease of coding the problem in different languages
-  - Group Assessment - Completed individual group assessment and uploaded to Canvas (without project files)
+  - **_README - Commented on the effort and ease of coding the problem in different languages_**
+  - **_Group Assessment - Completed individual group assessment and uploaded to Canvas (without project files)_**
   
 - **Nick Rieske**
   - Organization - Setup GitHub repository with inital code and shared with group members
@@ -88,9 +88,9 @@ Check out [this example file](sample_output.txt) for sample output.
   - C Implemention - tested and confirmed functionality aligns with assignment guidelines
   - Sample Output - Added sample out put from Java Implementation
   - Makefile - Built Makefile for the Java Implementation to the create executable file
-  - README - Added build instructions for the Java Implementation **_and described command line arguments_**
-  - **_README - Added a brief discussion describing your experience implementing this problem in Java and C_**
-  - **_Group Assessment - Completed individual group assessment and uploaded to Canvas (without project files)_**
+  - README - Added build instructions for the Java Implementation and described command line arguments
+  - README - Added a brief discussion describing your experience implementing this problem in Java and C
+  - Group Assessment - Completed individual group assessment and uploaded to Canvas (without project files)
 
 - **Jonathan Gresl**
   - Java Implementation - Tested and confirmed functionality aligns with assignment guidelines
