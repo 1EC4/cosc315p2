@@ -40,8 +40,8 @@ The Java Implementation and the C Implementation programs are built similarly. T
       - 
       - 
     
-    We chose C because as a group we were more familar with C over C++. So even though C++ is object oriented like java and would have made converting the problem between languages easier. C was chosen because the time spent learning how to program in C++ looked like it would outweigh the extra challenge of doing the problem in C. Also 3 semaphores were used rather than just the mutex with integer counters because this gets rid of the requirement of "check empty" and "check full" functions along with simplfying how push and poll are used in the master and slave files.   
-  **_TODO: README - Explain and motivate the design choices_**
+  **_TODO: README - Explain and motivate the design choices_**  
+   We chose C because as a group we were more familar with C over C++. So even though C++ is object oriented like java and would have made converting the problem between languages easier. C was chosen because the time spent learning how to program in C++ looked like it would outweigh the extra challenge of doing the problem in C. Also 3 semaphores were used rather than just the mutex with integer counters because this gets rid of the requirement of "check empty" and "check full" functions along with simplfying how push and poll are used in the master and slave files.   
   
 ## Build instructions
 
@@ -73,8 +73,8 @@ Check out [this example file](sample_output.txt) for sample output.
   - C Implementation - Built the SafeQueue using semaphores for concurrency
   - C Implementation - Implemented task generation and integrated with run-master function
   - C Implementation - Integrated SafeQueue push and poll functions with run_master and run_slave functions
-  - **_README - Commented on the effort and ease of coding the problem in different languages_**
-  - **_Group Assessment - Completed individual group assessment and uploaded to Canvas (without project files)_**
+  - README - Commented on the effort and ease of coding the problem in different languages
+  - Group Assessment - Completed individual group assessment and uploaded to Canvas (without project files)
   
 - **Nick Rieske**
   - Organization - Setup GitHub repository with inital code and shared with group members
