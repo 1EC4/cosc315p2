@@ -28,8 +28,19 @@ The Java Implementation and the C Implementation programs are built similarly. T
 ## Design Choices
   1. Dispatch requests using a bounded buffer producer-consumer framework
   2. Synchronization implemented in Java using monitors
+    - 
+    - 
+    - 
+    - 
   3. Synchronization implemented in C using semaphores
-  
+    - Uses 1 binary semaphore for locking the critical section
+    - Uses 1 non-binary semaphore for tracking how many items can be added to the queue
+    - Uses 1 non-binary semaphore for tracking how many how man tasks are on the queue
+    - 
+    -
+    -
+    
+    We chose C because...
   **_TODO: README - Explain and motivate the design choices_**
   
 ## Build instructions
