@@ -35,12 +35,12 @@ The Java Implementation and the C Implementation programs are built similarly. T
   3. Synchronization implemented in C using semaphores
       - Uses 1 binary semaphore for locking the critical section
       - Uses 1 non-binary semaphore for tracking how many items can be added to the queue
-      - Uses 1 non-binary semaphore for tracking how many how man tasks are on the queue
+      - Uses 1 non-binary semaphore for tracking how many tasks are on the queue
       - 
       - 
       - 
     
-    We chose C because...
+    We chose C because as a group we were more familar with C over C++. So even though C++ is object oriented like java and would have made converting the problem between languages easier. C was chosen because the time spent learning how to program in C++ looked like it would outweigh the extra challenge of doing the problem in C. Also 3 semaphores were used rather than just the mutex with integer counters because this gets rid of the requirement of "check empty" and "check full" functions along with simplfying how push and poll are used in the master and slave files.   
   **_TODO: README - Explain and motivate the design choices_**
   
 ## Build instructions
@@ -112,7 +112,7 @@ Check out [this example file](sample_output.txt) for sample output.
   Most of the exercise was relatively straight-forward to implement and test; however, one problem was how to implement
 and test the locks/monitors. Testing those required running the program at different settings and ensuring that the log 
 output was consistent with the expectations. Implementation in Java was easily achieved using the `synchronized` keyword
-while in C, semaphores had to be implemented from scratch.
+while in C, semaphores doesn't guarantee synchronization between multiple resources as a built in feature. This required learning how C's semaphore library can be combined with a user created data structure to achieve the same task.
 
 **_TODO: Comment on the amount of effort and ease of coding the problem in different languages_**
 
