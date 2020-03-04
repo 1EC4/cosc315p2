@@ -28,9 +28,9 @@ The Java Implementation and the C Implementation programs are built similarly. T
 ## Design Choices
   1. Dispatch requests using a bounded buffer producer-consumer framework
   2. Synchronization implemented in Java using monitors
-      - 
-      - 
-      - 
+      - Uses space-limited queue object
+      - Uses `synchronized` java keyword to lock critical sections
+      - Uses methods from the java object `ArrayBlockingQueue`
       - 
   3. Synchronization implemented in C using semaphores
       - Uses 1 binary semaphore for locking the critical section
@@ -51,9 +51,8 @@ The Java Implementation and the C Implementation programs are built similarly. T
 
   2. Navigate to the Java directory: `cd "cosc315p2/Java Implementation"`
   3. Build the program: `make`
-  4. Run the program: `java Main`
-  
-   **_TODO: README - Describe any command line arguments to specify parameters for the Java Implementation_**
+  4. Run the program (arguments optional): `java Main [num_slaves] [max_task_len] [max_master_idle]`
+        - Examples: `java Main` or `java Main 5` or `java Main 5 20` or `java Main 5 20 10`
   
 **C Implementation:**
 
@@ -86,7 +85,7 @@ Check out [this example file](sample_output.txt) for sample output.
   - Java Implementation - Built the SafeQueue using monitors for concurrency
   - Java Implementation - Integrated SafeQueue push and poll functions with the master and slave threads
   - Java Implementation - Built helper method for determining current time and printing output to console
-  - **_C Implemention - tested and confirmed functionality aligns with assignment guidelines_**
+  - C Implemention - tested and confirmed functionality aligns with assignment guidelines
   - Sample Output - Added sample out put from Java Implementation
   - Makefile - Built Makefile for the Java Implementation to the create executable file
   - README - Added build instructions for the Java Implementation **_and described command line arguments_**
@@ -110,7 +109,10 @@ Check out [this example file](sample_output.txt) for sample output.
 
 ## Programming Experience
 
-**_TODO: Add a brief discussion describing your experience implementing this problem in Java and C_**
+  Most of the exercise was relatively straight-forward to implement and test; however, one problem was how to implement
+and test the locks/monitors. Testing those required running the program at different settings and ensuring that the log 
+output was consistent with the expectations. Implementation in Java was easily achieved using the `synchronized` keyword
+while in C, semaphores had to be implemented from scratch.
 
 **_TODO: Comment on the amount of effort and ease of coding the problem in different languages_**
 
