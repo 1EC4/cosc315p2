@@ -11,7 +11,7 @@
 
 ## Description
 
-The program creates multiple threads - one master thread and N slave threads - to produce and consume requests. The master thread periodically produces requests and puts them into a request queue. The slave threads remove the requests from the queue and processes them for a duration equal to the request’s length. With all threads sharing the same bounded buffer resource, they must take turns accessing the resource. To ensure the threads don't interfere with each other, the threads must also acquire and release locks before executing any tasks on the resource.
+The program creates multiple threads - one master thread and N slave threads - to produce and consume requests. The master thread periodically produces requests and puts them into a request queue. The slave threads remove the requests from the queue and processes them for a duration equal to the request’s length. With all threads sharing the same bounded buffer resource, they must take turns accessing the resource. To ensure the threads don't interfere with each other, the threads must also acquire and release locks before reading or writing to the shared resource.
 
 The Java Implementation and the C Implementation programs are built similarly. The main difference between the two programs is how synchronization is achieved; the Java Implementation uses monitors while the C Implementation uses semaphores. In both cases, the synchronization methods are applied to the pop and pull functions of the request queue.
 
