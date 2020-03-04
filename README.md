@@ -11,7 +11,9 @@
 
 ## Description
 
-**_TODO: Explain the design of your program and how syncronization works._**
+The program creates multiple threads - one master thread and N slave threads - to produce and consume requests. The master thread periodically produces requests and puts them into a request queue. The slave threads remove the requests from the queue and processes them for a duration equal to the request’s length. With all threads sharing the same bounded buffer resource, they must take turns accessing the resource. To ensure the threads don't interfere with each other, the threads must also acquire and release locks before executing any tasks on the resource.
+
+The Java Implementation and the C Implementation programs are built similarly. The main difference between the two programs is how synchronization is achieved; the Java Implementations uses monitors while the C Implementation uses semaphores. In both cases, the synchronization methods are applied to the pop and pull functions of the request queue.
 
 ## Core Features
 **Request scheduling using threads and synchronization:**
@@ -88,13 +90,12 @@ Check out [this example file](sample_output.txt) for sample output.
   - C Implementation - Added functionality to accept command line arguments to configure parameters
   - Sample Output - Added sample output from C Implementation
   - Makefile - Built Makefile for the C implementation to create the executable file
+  - README - Added the description and how syncronization works
   - README - Framed out README template and and created linked sections for each assignment expectation
   - README - Added the core features and design choices for the program
   - README - Added build instructions for the C Implementation and described command line arguments
   - README - Updated the contributions section as work was completed
-  - **_README - Added the design description and how syncronization works_**
-  - **_README - Added explanation and motivation for the design choices_**
-  - **_Group Assessment - Completed individual group assessment and uploaded to Canvas (with project files)_**
+  - Group Assessment - Completed individual group assessment and uploaded to Canvas (with project files)
 
 ## Programming Experience
 
