@@ -73,8 +73,8 @@ Check out [this example file](sample_output.txt) for sample output.
   - C Implementation - Built the SafeQueue using semaphores for concurrency
   - C Implementation - Implemented task generation and integrated with run-master function
   - C Implementation - Integrated SafeQueue push and poll functions with run_master and run_slave functions
-  - **_README - Commented on the effort and ease of coding the problem in different languages_**
-  - **_Group Assessment - Completed individual group assessment and uploaded to Canvas (without project files)_**
+  - README - Commented on the effort and ease of coding the problem in different languages
+  - Group Assessment - Completed individual group assessment and uploaded to Canvas (without project files)
   
 - **Nick Rieske**
   - Organization - Setup GitHub repository with inital code and shared with group members
